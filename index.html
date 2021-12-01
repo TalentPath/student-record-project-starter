@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Student Record Project</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="info-display">
+            <div class="sort-bar">
+                <div class="name-sort">
+                    <i class="fas fa-chevron-up name-asc"></i>
+                    <i class="fas fa-chevron-down name-desc"></i>
+                </div>
+                <div class="empty"></div>
+                <div class="grade-sort">
+                    <i class="fas fa-chevron-up grade-asc"></i>
+                    <i class="fas fa-chevron-down grade-desc"></i>
+                </div>
+                <div>
+                    <i class="fas fa-undo normal-sort"></i>
+                </div>
+            </div>
+            <div class="student info">
+                <div class="name">Student Name</div>
+                <div class="course">Course</div>
+                <div class="grade">Grade</div>
+                <div class="passing">Passing?</div>
+            </div>
+        </div>
+        <div class="student-display">
+        </div>
+
+        <div class="add-student">
+            <form id="add-student">
+                <label for="student-name">Student Name</label>
+                <input type="text" name="student-name" id="student-name">
+                <label for="student-course">Course</label>
+                <input type="text" name="student-course" id="student-course">
+                <label for="student-grade">Grade</label>
+                <input type="number" name="student-grade" id="student-grade">
+                <input type="button" value="Enter Student" class="submit-button">
+            </form>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
